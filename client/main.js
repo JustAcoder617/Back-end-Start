@@ -1,27 +1,20 @@
-async function checar_back_barrinha() {
-    const progress = document.getElementById('prg');
-
+async function version() {
     try {
-        const datasv = await fetch("http://localhost:3000/data?dado=1", {
+        const resposta = await fetch("http://localhost:3000/status", {
             cache: "no-store"
         });
-        
-        const resposta = await datasv.json(); 
-        
-        // Se o seu back retornar algo tipo { valor: "60" }
-        // Você precisa acessar a propriedade, ex: resposta.valor
-        const valorBruto = typeof resposta === 'object' ? resposta.data : resposta;
 
-        const final = parseInt(valorBruto, 10);
+        const dado = await resposta.text();
 
-        if (!isNaN(final)) {
-           progress.value = final;
-        } else {
-            console.error("O retorno não é um número válido!");
+        const span = document.getElementById("vrs");
+        
+        if (span) {
+            span.innerText = dado.ver; 
+            console.log("Versão atual:", dado);
         }
-    } catch (error) {
-        console.error("Erro de conexão/fetch:", error);
+    } catch (err) {
+        console.error("Erro ao buscar a versão:", err);
     }
 }
-const button=document.getElementById("oi");
-addEventListener("click", checar_back_barrinha);
+
+window.onload = version;
