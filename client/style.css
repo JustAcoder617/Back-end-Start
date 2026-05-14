@@ -1,14 +1,16 @@
 #start{
     font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    padding-left: 23vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
-.frm{
-    input{
-        position: relative;
-        width: 300px;
-    }
+.frm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,11 +27,10 @@ body{
     background-color: greenyellow;
 }
 .frm button{
-    margin-left: 15vh;
     margin-top: 17px;
     border: none;
     background-color: rgba(0, 136, 255, 0.677);
-    width: 190px;
+    width: 195px;
     height: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: medium;
@@ -40,4 +41,8 @@ body{
     background-color: blue;
     box-shadow: 5px 5px 10px goldenrod;
     transform: translateY(-2px);
+}
+.frm input{
+    position: relative;
+    width: 300px;
 }

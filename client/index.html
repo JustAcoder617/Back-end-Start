@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <div id="start">
@@ -20,19 +21,19 @@
     </div>
     <hr>
     <div class="frm">
-        <form action="/login" method="post">
-        <label for="name">
-            Nome de usuário: 
-        </label>
-        <input type="text" name="user" id="usr" required placeholder="Nome: ">
-        <br>
-        <label for="senha">
-            Senha:
-        </label>
-        <input type="password" name="senha" id="psw" required placeholder="Senha:">
-        <br>
-        <button type="submit">Enviar</button>
-     </form>
+        <form id="frmp" onsubmit="return false;">
+            <label for="name">
+                Nome de usuário: 
+            </label>
+            <input type="text" name="username" id="usr" required placeholder="Nome: ">
+            <br>
+            <label for="senha">
+                Senha:
+            </label>
+            <input type="password" name="psw" id="psw" required placeholder="Senha:">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </body>
 </html>
