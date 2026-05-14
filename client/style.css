@@ -1,0 +1,43 @@
+#start{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    padding-left: 23vh;
+
+}
+.frm{
+    input{
+        position: relative;
+        width: 300px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 100px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+}
+.frm label{
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: greenyellow;
+}
+.frm button{
+    margin-left: 15vh;
+    margin-top: 17px;
+    border: none;
+    background-color: rgba(0, 136, 255, 0.677);
+    width: 190px;
+    height: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    cursor: pointer;
+}
+.frm button:hover{
+    color: rgb(0, 255, 0);
+    background-color: blue;
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: translateY(-2px);
+}

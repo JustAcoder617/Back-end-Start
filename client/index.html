@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ver preços de casas</title>
-    <script src="main.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="start">
-        <h1>Bem vindo ao ver preços de casas! aqui você garante uma média de um preço de uma casa no Brasil.</h1>
-        <h2>Escolha abaixo</h2>
-    </div>
-    <footer>
+        <h1>
+        Bem vindo ao EasySchool!
+        </h1>
+        <h2>
+            faça seu login para acessar o sistema.
+        </h2>
         <p>
-            Versão: <span id="vrs">
-                404 not found
-            </span>
+            Sem uma conta? Faça Login <a href="login/index2.html"> Aqui!</a>
         </p>
-    </footer>
+    </div>
+    <hr>
+    <div class="frm">
+        <form action="/login" method="post">
+        <label for="name">
+            Nome de usuário: 
+        </label>
+        <input type="text" name="user" id="usr" required placeholder="Nome: ">
+        <br>
+        <label for="senha">
+            Senha:
+        </label>
+        <input type="password" name="senha" id="psw" required placeholder="Senha:">
+        <br>
+        <button type="submit">Enviar</button>
+     </form>
+    </div>
 </body>
 </html>
